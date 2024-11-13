@@ -34,7 +34,7 @@ CREATE TABLE `requests` (
   `action` enum('add','remove') DEFAULT NULL,
   `status` enum('pending','approved','rejected') DEFAULT 'pending',
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `requests`
@@ -76,7 +76,7 @@ CREATE TABLE `users` (
   `password` varchar(255) NOT NULL,
   `email` varchar(255) DEFAULT NULL,
   `role` enum('user','admin') DEFAULT 'user'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `users`
@@ -96,7 +96,7 @@ CREATE TABLE `websites` (
   `id` int NOT NULL,
   `url` varchar(255) NOT NULL,
   `is_blacklisted` tinyint(1) DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `websites`
