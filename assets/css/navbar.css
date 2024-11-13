@@ -1,0 +1,127 @@
+/* Navbar Styling */
+.navbar {
+    width: 100%;
+    background-color: white; /* Primary color */
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links li {
+    margin: 0;
+}
+
+.navbar-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: black;
+}
+
+/* Add a margin to the content to prevent it from being hidden behind the navbar */
+body {
+    margin-top: 15px; /* Adjust based on navbar height */
+}
+
+/* Responsive navbar */
+@media screen and (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Bottom Bar Styling (similar to Navbar) */
+.bottom-bar {
+    width: 100%;
+    background-color: white; /* Same background color as the navbar */
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better separation */
+}
+
+.bottom-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.bottom-bar p {
+    font-size: 14px;
+    color: black;
+    margin: 0;
+}
+
+.bottom-bar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.bottom-bar-links li {
+    margin: 0;
+}
+
+.bottom-bar-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.bottom-bar-links a:hover {
+    color: #2575fc; /* Change hover color if needed */
+}
+
+/* Prevent body content from being hidden behind the bottom bar */
+body {
+    margin-bottom: 15px; /* Adjust based on bottom bar height */
+}
+
+/* Responsive bottom bar */
+@media screen and (max-width: 768px) {
+    .bottom-bar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bottom-bar-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "name": "silva/silva",
+    "autoload": {
+        "psr-4": {
+            "Silva\\Silva\\": "src/"
+        }
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}
